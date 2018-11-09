@@ -8,6 +8,8 @@ The `discord_webhooks` package can be installed into your project via Pip.
 $ pip install discord_webhooks
 ```
 
+Unit tests can be [found here](tests.py).
+
 ## How It Works 🎬
 
 Import the package into your project and initialize it to get started. You must pass the [webhook URL you obtained from your Discord channel in as the arguement](https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks). 
