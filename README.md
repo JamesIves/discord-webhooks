@@ -2,10 +2,10 @@
 Easy to use package for Python which allows for sending of webhooks to a [Discord server](https://discordapp.com/).
 
 ## Installation Steps 💽
-The `DiscordWebhooks` package can be installed into your project via Pip.
+The `discord_webhooks` package can be installed into your project via Pip.
 
 ```
-$ pip install discord-webhooks
+$ pip install discord_webhooks
 ```
 
 ## How It Works 🎬
@@ -13,7 +13,7 @@ $ pip install discord-webhooks
 Import the package into your project and initialize it to get started. You must pass the [webhook URL you obtained from your Discord channel in as the arguement](https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks). 
 
 ```python
-import discord-webhooks
+import discord_webhooks
 
 # Webhook URL for your Discord channel.
 WEBHOOK_URL = 'http://discord.gg/...'
@@ -33,7 +33,7 @@ If you'd like to send a message attachment you can do so.
 
 
 ```python
-import discord-webhooks
+import discord_webhooks
 
 # Webhook URL for your Discord channel.
 WEBHOOK_URL = 'http://discord.gg/...'

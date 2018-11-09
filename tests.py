@@ -1,6 +1,6 @@
 import unittest
 import json
-from webhooks import DiscordWebhooks
+from discord_webhooks import DiscordWebhooks
 
 class BaseTest(unittest.TestCase):
 
