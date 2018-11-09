@@ -78,7 +78,7 @@ The `set_content` method can be used to send basic messages to Discord.
 | `title`  | Displays a title on an message attachment. | `String` |
 | `description`  | Displays a description on an message attachment. | `String` |
 | `url`  | Creates a link on the title. | String|
-| `color`  | Displays a colored strip on the left side of an message attachment. This should be a hexademical value, for example `0xF58CBA`. | `int` |
+| `color`  | Displays a colored strip on the left side of an message attachment. This should be a hexademical value, for example `0xF58CBA`. | `Integer` |
 | `timestamp`  | Displays a timestamp beneath the message attachment. Must be a valid timestamp, consider using Python's `datetime` to achieve localtime.  | `String` |
 
 ---
@@ -130,4 +130,4 @@ Using `add_field` you're able to attach a field to a message attachment. You can
 | ------------- | ------------- | ------------- |
 | `name`  | The name of the field. | `String` |
 | `value`  | The value of the field. | `String` |
-| `inline`  | Determines if the field should display inline or not, this is primarily used for formatting when you have multiple fields. | `boolean` |
+| `inline`  | Determines if the field should display inline or not, this is primarily used for formatting when you have multiple fields. | `Boolean` |
