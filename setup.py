@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
   name='Discord Webhooks',
   version='1.0.0',
-  scripts=['discord_webhooks.py'],
+  packages=find_packages(exclude=['tests', 'tests.*'])
   url='https://github.com/JamesIves/discord-webhooks',
   author='James Ives',
   author_email='iam@jamesiv.es',
