@@ -59,6 +59,7 @@ You can find a list of all available methods below. None of the parameters are r
 | `color`  | TODO: | TODO: |
 | `timestamp`  | TODO: | TODO: |
 
+---
 
 #### `set_author`
 | Arguement  | Description | Type |
