@@ -9,13 +9,13 @@ class DiscordWebhooks:
     self.content = kwargs.get('content')
 
     # Generic Embed Data
-    self.title = kwargs.get('title')
-    self.description = kwargs.get('description')
-    self.url = kwargs.get('url')
-    self.color = kwargs.get('color')
-    self.timestamp = kwargs.get('timestamp')
 
     # Optional Values
+    self.title = None
+    self.description = None
+    self.url = None
+    self.color = None
+    self.timestamp = None
     self.author_name = None
     self.author_url = None
     self.author_icon = None
@@ -26,6 +26,18 @@ class DiscordWebhooks:
 
     # Fields Array
     self.fields = []
+
+  def set_content(self, **kwargs):
+    """
+      Sets generic data on the embed object.
+    """
+    self.content = kwargs.get('content')
+    self.title = kwargs.get('title')
+    self.description = kwargs.get('description')
+    self.url = kwargs.get('url')
+    self.color = kwargs.get('color')
+    self.timestamp = kwargs.get('timestamp')
+
 
   def set_image(self, **kwargs):
     """

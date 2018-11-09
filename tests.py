@@ -8,7 +8,8 @@ class BaseTest(unittest.TestCase):
     """
       Tests a standard messgae payload with nothing but content.
     """
-    webhook = DiscordWebhooks('webhook_url', content='Montezuma')
+    webhook = DiscordWebhooks('webhook_url')
+    webhook.set_content(content='Montezuma')
 
     expected_payload = {
         'content': 'Montezuma', 
@@ -30,7 +31,8 @@ class BaseTest(unittest.TestCase):
     """
       Tests a generic messgae payload.
     """
-    webhook = DiscordWebhooks('webhook_url', content='Montezuma', title='Best Cat Ever', description='Seriously', \
+    webhook = DiscordWebhooks('webhook_url')
+    webhook.set_content(content='Montezuma', title='Best Cat Ever', description='Seriously', \
       url='http://github.com/JamesIves', color=0xF58CBA, timestamp='2018-11-09T04:10:42.039Z')
 
     expected_payload = \
@@ -58,7 +60,8 @@ class BaseTest(unittest.TestCase):
     """
       Tests the set_image method and ensures the data gets added to the payload.
     """
-    webhook = DiscordWebhooks('webhook_url', content='Montezuma')
+    webhook = DiscordWebhooks('webhook_url')
+    webhook.set_content(content='Montezuma')
     webhook.set_image(url='https://avatars1.githubusercontent.com/u/10888441?s=460&v=4')
 
     expected_payload = \
@@ -83,7 +86,8 @@ class BaseTest(unittest.TestCase):
     """
       Tests the set_thumbnailk method and ensures the data gets added to the payload.
     """
-    webhook = DiscordWebhooks('webhook_url', content='Montezuma')
+    webhook = DiscordWebhooks('webhook_url')
+    webhook.set_content(content='Montezuma')
     webhook.set_thumbnail(url='https://avatars1.githubusercontent.com/u/10888441?s=460&v=4')
 
     expected_payload = \
@@ -108,7 +112,8 @@ class BaseTest(unittest.TestCase):
     """
       Tests the set_author method and ensures the data gets added to the payload.
     """
-    webhook = DiscordWebhooks('webhook_url', content='Montezuma')
+    webhook = DiscordWebhooks('webhook_url')
+    webhook.set_content(content='Montezuma')
     webhook.set_author(name='James Ives', url='https://jamesiv.es', icon_url='https://avatars1.githubusercontent.com/u/10888441?s=460&v=4')
 
     expected_payload = \
@@ -135,12 +140,11 @@ class BaseTest(unittest.TestCase):
     """
       Tests the set_footer method and ensures the data gets added to the payload.
     """
-    webhook = DiscordWebhooks('webhook_url', content='Montezuma')
+    webhook = DiscordWebhooks('webhook_url')
     webhook.set_footer(text='Footer', icon_url='https://avatars1.githubusercontent.com/u/10888441?s=460&v=4')
 
     expected_payload = \
       {
-        'content': 'Montezuma',
         'embeds': [
             {
               'fields': [],
@@ -161,7 +165,7 @@ class BaseTest(unittest.TestCase):
     """
       Tests the set_field method and ensures the data gets added to the payload.
     """
-    webhook = DiscordWebhooks('webhook_url', content='Montezuma')
+    webhook = DiscordWebhooks('webhook_url')
     webhook.add_field(name='Field1', value='Value1', inline=True)
     webhook.add_field(name='Field2', value='Value2', inline=True)
     webhook.add_field(name='Field3', value='Value3', inline=False)
@@ -171,7 +175,6 @@ class BaseTest(unittest.TestCase):
 
     expected_payload = \
       {
-        'content': 'Montezuma',
         'embeds': [
             {
               'fields': [
@@ -210,7 +213,8 @@ class BaseTest(unittest.TestCase):
     """
       Tests a combination of all methods to form a complex payload object.
     """
-    webhook = DiscordWebhooks('webhook_url', content='Montezuma', title='Best Cat Ever', description='Seriously', \
+    webhook = DiscordWebhooks('webhook_url')
+    webhook.set_content(content='Montezuma', title='Best Cat Ever', description='Seriously', \
       url='http://github.com/JamesIves', color=0xF58CBA, timestamp='2018-11-09T04:10:42.039Z')
     webhook.set_image(url='https://avatars1.githubusercontent.com/u/10888441?s=460&v=4')
     webhook.set_thumbnail(url='https://avatars1.githubusercontent.com/u/10888441?s=460&v=4')
