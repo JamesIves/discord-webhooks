@@ -1,4 +1,7 @@
 # Discord Webhooks for Python 🔗 🐍
+
+[![Build Status](https://travis-ci.org/JamesIves/discord-webhooks.svg?branch=master)](https://travis-ci.org/JamesIves/discord-webhooks) [![Issues](https://img.shields.io/github/issues/JamesIves/discord-webhooks.svg)](https://github.com/JamesIves/discord-webhooks/issues)
+
 Easy to use package for Python which allows for sending of webhooks to a [Discord server](https://discordapp.com/).
 
 ## Installation Steps 💽
