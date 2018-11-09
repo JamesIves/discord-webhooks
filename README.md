@@ -13,7 +13,7 @@ $ pip install discord_webhooks
 
 ## How It Works 🎬
 
-Import the package into your project and initialize it to get started. You must pass the [webhook URL you obtained from your Discord channel in as the arguement](https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks). 
+Import the package into your project and initialize it to get started. You must pass the [webhook URL you obtained from your Discord channel in as the argument](https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks). 
 
 ```python
 import discord_webhooks
@@ -72,7 +72,7 @@ You can find an explanation of all available methods below.
 #### `set_content`
 The `set_content` method can be used to send basic messages to Discord.
 
-| Arguement  | Description | Type |
+| Argument  | Description | Type |
 | ------------- | ------------- | ------------- |
 | `content`  | Content represents a standard message on Discord. | `String` |
 | `title`  | Displays a title on an message attachment. | `String` |
@@ -86,7 +86,7 @@ The `set_content` method can be used to send basic messages to Discord.
 #### `set_author`
 Using `set_author` you're able to attach an author to an message attachment.
 
-| Arguement  | Description | Type |
+| Argument  | Description | Type |
 | ------------- | ------------- | ------------- |
 | `name`  | The name of the author. | `String` |
 | `url`  | Creates a link on the author name. | `String` |
@@ -97,7 +97,7 @@ Using `set_author` you're able to attach an author to an message attachment.
 #### `set_footer`
 Using `set_footer` you're able to attach a footer to an message attachment.
 
-| Arguement  | Description | Type |
+| Argument  | Description | Type |
 | ------------- | ------------- | ------------- |
 | `text`  | The text that should display in the footer. | `String` |
 | `icon_url`  | Displays a footer icon, must resolve to a valid image path. | `String` |
@@ -108,7 +108,7 @@ Using `set_footer` you're able to attach a footer to an message attachment.
 #### `set_thumbnail`
 Using `set_thumbnail` you're able to attach a thumbnail to a message attachment.
 
-| Arguement  | Description | Type |
+| Argument  | Description | Type |
 | ------------- | ------------- | ------------- |
 | `url`  | Displays a thumbnail image in the message attachment | `String` |
 
@@ -117,7 +117,7 @@ Using `set_thumbnail` you're able to attach a thumbnail to a message attachment.
 ##### `set_image`
 Using `set_image` you're able to attach an image to a message attachment.
 
-| Arguement  | Description | Type |
+| Argument  | Description | Type |
 | ------------- | ------------- | ------------- |
 | `url`  | Displays an image in the message attachment | `String` |
 
@@ -126,8 +126,7 @@ Using `set_image` you're able to attach an image to a message attachment.
 #### `add_field`
 Using `add_field` you're able to attach a field to a message attachment. You can add as many fields as you want.
 
-
-| Arguement  | Description | Type |
+| Argument  | Description | Type |
 | ------------- | ------------- | ------------- |
 | `name`  | The name of the field. | `String` |
 | `value`  | The value of the field. | `String` |
