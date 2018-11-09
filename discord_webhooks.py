@@ -2,6 +2,7 @@ from datetime import datetime
 import requests
 import json
 
+
 class DiscordWebhooks:
   def __init__(self, webhook_url, **kwargs):
     # Constructor
@@ -37,7 +38,6 @@ class DiscordWebhooks:
     self.url = kwargs.get('url')
     self.color = kwargs.get('color')
     self.timestamp = kwargs.get('timestamp')
-
 
   def set_image(self, **kwargs):
     """
@@ -94,7 +94,7 @@ class DiscordWebhooks:
     }
 
     # Attaches data to the payload if provided.
-    if self.content: 
+    if self.content:
       payload['content'] = self.content
 
     if self.title:
@@ -129,7 +129,7 @@ class DiscordWebhooks:
 
     if self.fields:
       embed['fields'] = self.fields
-    
+
     if self.footer_icon:
       embed['footer']['icon_url'] = self.footer_icon
 
@@ -143,14 +143,14 @@ class DiscordWebhooks:
 
     return payload
 
-
   def send(self):
-    """ 
+    """
       Makes a POST request to Discord with the message payload.
     """
     payload = self.format_payload()
 
-    # Makes sure that the required fields are provided before sending the payload.
+    # Makes sure that the required fields are provided before
+    # sending the payload.
     if not self.webhook_url:
       print ('Error: Webhook URL is required.')
 
@@ -159,12 +159,11 @@ class DiscordWebhooks:
 
     else:
       try:
-        request = requests.post(self.webhook_url, 
-            data=json.dumps(payload), headers={'Content-Type': 'application/json'})
+        request = requests.post(self.webhook_url,
+            data=json.dumps(payload),
+            headers={'Content-Type': 'application/json'})
 
         request.raise_for_status()
 
       except requests.exceptions.RequestException as error:
         print('Error: %s' % error)
-
-    
