@@ -64,6 +64,8 @@ webhook.send()
 ## Methods 📡
 You can find an explanation of all available methods below. 
 
+---
+
 #### `set_content`
 The `set_content` method can be used to send basic messages to Discord.
 
