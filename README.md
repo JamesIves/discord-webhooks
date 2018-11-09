@@ -19,7 +19,10 @@ import discord-webhooks
 WEBHOOK_URL = 'http://discord.gg/...'
 
 # Initialize the webhook class and attaches data.
-webhook = DiscordWebhooks(WEBHOOK_URL, content='Montezuma!')
+webhook = DiscordWebhooks(WEBHOOK_URL)
+
+# Sets some content
+webhook.set_content(content='Montezuma!')
 
 # Triggers the payload to be sent to Discord.
 webhook.send()
@@ -36,7 +39,7 @@ import discord-webhooks
 WEBHOOK_URL = 'http://discord.gg/...'
 
 # Initialize the webhook class.
-webhook = DiscordWebhooks('webhook_url')
+webhook = DiscordWebhooks(WEBHOOK_URL)
 
 webhook.set_content(content='The best cat ever is...', title='Montezuma!', description='Seriously!', \
   url='http://github.com/JamesIves', color=0xF58CBA, timestamp='2018-11-09T04:10:42.039Z')
