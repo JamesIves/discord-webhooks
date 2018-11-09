@@ -4,8 +4,8 @@ long_description = open('README.md').read()
 
 setup(
   name='Discord Webhooks',
-  version='1.0.1',
-  packages=find_packages(exclude=['tests', 'tests.*']),
+  version='1.0.3',
+  py_modules=['discord_webhooks'],
   url='https://github.com/JamesIves/discord-webhooks',
   author='James Ives',
   author_email='iam@jamesiv.es',
@@ -16,6 +16,11 @@ setup(
     'requests==2.20.0'
   ],
   classifiers=[
-    'Programming Language :: Python :: 3'
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Other Environment',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.6',
   ],
 )
