@@ -131,3 +131,8 @@ Using `add_field` you're able to attach a field to a message attachment. You can
 | `name`  | The name of the field. | `String` |
 | `value`  | The value of the field. | `String` |
 | `inline`  | Determines if the field should display inline or not, this is primarily used for formatting when you have multiple fields. | `Boolean` |
+
+---
+
+#### `send`
+When you're done formatting your message attachment you can use the `send` method to dispatch it to Discord.
