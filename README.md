@@ -24,7 +24,7 @@ WEBHOOK_URL = 'http://discord.gg/...'
 # Initialize the webhook class and attaches data.
 webhook = DiscordWebhooks(WEBHOOK_URL)
 
-# Sets some content
+# Sets some content for a basic message.
 webhook.set_content(content='Montezuma!')
 
 # Triggers the payload to be sent to Discord.
