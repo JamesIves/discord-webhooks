@@ -29,7 +29,7 @@ class BaseTest(unittest.TestCase):
 
   def test_generic_embed_message(self):
     """
-      Tests a generic messgae payload.
+      Tests a generic message payload.
     """
     webhook = DiscordWebhooks('webhook_url')
     webhook.set_content(content='Montezuma', title='Best Cat Ever', description='Seriously', \
@@ -84,7 +84,7 @@ class BaseTest(unittest.TestCase):
 
   def test_set_thumbnail(self):
     """
-      Tests the set_thumbnailk method and ensures the data gets added to the payload.
+      Tests the set_thumbnail method and ensures the data gets added to the payload.
     """
     webhook = DiscordWebhooks('webhook_url')
     webhook.set_content(content='Montezuma')
