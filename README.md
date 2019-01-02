@@ -77,7 +77,7 @@ The `set_content` method can be used to send basic messages to Discord.
 | `content`  | Content represents a standard message on Discord. | `String` |
 | `title`  | Displays a title on an message attachment. | `String` |
 | `description`  | Displays a description on an message attachment. | `String` |
-| `url`  | Creates a link on the title. | String|
+| `url`  | Creates a link on the title. | `String` |
 | `color`  | Displays a colored strip on the left side of an message attachment. This should be a hexademical value, for example `0xF58CBA`. | `Integer` |
 | `timestamp`  | Displays a timestamp beneath the message attachment. Must be a valid timestamp, consider using Python's `datetime` to achieve localtime.  | `String` |
 
