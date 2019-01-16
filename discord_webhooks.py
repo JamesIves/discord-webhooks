@@ -2,7 +2,6 @@ from datetime import datetime
 import requests
 import json
 
-
 class DiscordWebhooks:
   def __init__(self, webhook_url, **kwargs):
     # Constructor
