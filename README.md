@@ -114,7 +114,7 @@ Using `set_thumbnail` you're able to attach a thumbnail to a message attachment.
 
 ---
 
-##### `set_image`
+#### `set_image`
 Using `set_image` you're able to attach an image to a message attachment.
 
 | Argument  | Description | Type |
