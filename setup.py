@@ -13,7 +13,7 @@ setup(
   long_description=long_description,
   license='MIT',
   install_requires=[
-    'requests==2.23.0'
+    'requests==2.24.0'
   ],
   classifiers=[
     'Development Status :: 5 - Production/Stable',
